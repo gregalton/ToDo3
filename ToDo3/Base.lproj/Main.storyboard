@@ -75,7 +75,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="ToDo3" id="UPL-cJ-oy4">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dGM-qs-vLf">
+                        <barButtonItem key="rightBarButtonItem" title="+" id="dGM-qs-vLf">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
                                 <action selector="addButton:" destination="BYZ-38-t0r" id="4Bo-oc-INb"/>
