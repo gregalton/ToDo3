@@ -17,8 +17,6 @@ class CoreDataTests: XCTestCase {
     
     // Test managed object context is not nil
     func testContext() {
-        //let moContext = PersistentService.context
-        
         XCTAssertNotNil(moContext)
     }
     
