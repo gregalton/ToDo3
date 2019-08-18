@@ -26,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             listItem?.title = addItem.textFields![0].text
             listItem?.isChecked = false
             PersistentService.saveContext()
-            self.getListItems()
+            self.items = PersistentService.getListItems()
             self.tableView.reloadData()
         }
         
@@ -43,19 +43,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 60
-        self.getListItems()
-    }
-    
-    func getListItems() {
-        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "ListItem")
-        
-        do {
-            items = try moContext.fetch(request) as! [ListItem]
-        } catch {
-            fatalError("Failed to fetch list items: \(error)")
-        }
-        
-        self.tableView.reloadData()
+        self.items = PersistentService.getListItems()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

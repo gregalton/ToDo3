@@ -45,4 +45,16 @@ class PersistentService {
         }
     }
     
+    static func getListItems() -> [ListItem] {
+        var items = [ListItem]()
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "ListItem")
+        
+        do {
+            items = try self.context.fetch(request) as! [ListItem]
+        } catch {
+            fatalError("Failed to fetch list items: \(error)")
+        }
+        return items
+    }
+    
 }
