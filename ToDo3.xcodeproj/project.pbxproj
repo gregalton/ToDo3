@@ -19,6 +19,7 @@
 		9867B7132304F31D006EFB4C /* PersistentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9867B7122304F31D006EFB4C /* PersistentService.swift */; };
 		986D22622308889E00EA27A6 /* CoreDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D22612308889E00EA27A6 /* CoreDataTests.swift */; };
 		986D22692308AD9400EA27A6 /* ToDo3.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9867B6E623039A2E006EFB4C /* ToDo3.xcdatamodeld */; };
+		986D226B2309D82200EA27A6 /* ViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 986D226A2309D82200EA27A6 /* ViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		986D225F2308889E00EA27A6 /* CoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		986D22612308889E00EA27A6 /* CoreDataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataTests.swift; sourceTree = "<group>"; };
 		986D22632308889E00EA27A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986D226A2309D82200EA27A6 /* ViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				9867B6F723039A30006EFB4C /* ToDo3Tests.swift */,
 				9867B6F923039A30006EFB4C /* Info.plist */,
+				986D226A2309D82200EA27A6 /* ViewControllerTests.swift */,
 			);
 			path = ToDo3Tests;
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				986D226B2309D82200EA27A6 /* ViewControllerTests.swift in Sources */,
 				9867B6F823039A30006EFB4C /* ToDo3Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -633,6 +637,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DRYSXRY2F;
 				INFOPLIST_FILE = CoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -652,6 +657,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3DRYSXRY2F;
 				INFOPLIST_FILE = CoreDataTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
